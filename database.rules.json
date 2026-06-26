@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "levels": {
+      ".read": true,
+      ".write": true,
+      "$member": {
+        ".validate": "newData.isNumber() && newData.val() >= 1 && newData.val() <= 10"
+      }
+    },
+    "activity": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["ts"]
+    }
+  }
+}
